@@ -1,0 +1,13 @@
+scala:
+  source_dir: src/main/scala
+  test_cmd: sbt test
+  include_files: "*.scala"
+java:
+  source_dir: src/main/java
+  test_cmd: gradle test
+  include_files: "*.java"
+javascript:
+  setup_cmd: npm install
+  test_cmd: npm run test
+  include_files: "*.js"
+  exclude_files: "*.spec.js"
